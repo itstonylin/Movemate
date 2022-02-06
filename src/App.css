@@ -1,38 +1,168 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Roboto:wght@700&display=swap');
+body {
+    font-family: 'Lato', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.website-name-link {
+    text-decoration: none;
+    color: #54d1db;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.website-name-link:hover {
+    color: hsl(184, 76%, 43%);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+h1 {
+    color: #54d1db;
 }
 
-.App-link {
-  color: #61dafb;
+h1,
+h2 {
+    font-family: 'Roboto', sans-serif;
+    color: #54d1db;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.movemates-color {
+    color: #54d1db;
+}
+
+.bold {
+    font-weight: 900;
+}
+
+.money-green {
+    color: #118C4F;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.subtitle1 {
+    text-align: center;
+    font-size: 50px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+}
+
+.header>h1 {
+    margin-right: 15px;
+    font-size: 50px;
+}
+
+.header p {
+    font-size: 20px;
+}
+
+
+/* Hero.js styles */
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 300px 300px;
+    width: 75%;
+    margin: 0 auto;
+    grid-gap: 20px;
+}
+
+.first-box,
+.second-box,
+.third-box,
+.fourth-box {
+    width: 100%;
+    text-align: center;
+}
+
+.container>div>img {
+    margin: 0 auto;
+    width: 75%;
+    margin-top: 25px;
+}
+
+.second-box h2,
+.third-box h2 {
+    font-size: 3rem;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.first-box ul,
+.second-box ul,
+.third-box ul,
+.fourth-box ul {
+    font-size: 1.2rem;
+}
+
+
+/* Receipt.js styles */
+
+.receipt-container {
+    text-align: center;
+}
+
+.receipt-table {
+    margin: 0 auto;
+}
+
+
+/* Form.js styles */
+
+.form-container {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.form-container p {
+    font-size: 20px;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+}
+
+label {
+    margin: 0 10px;
+    height: 20px;
+    font-size: 1.5rem;
+}
+
+input {
+    height: 30px;
+    width: 150px;
+    margin: 0 10px;
+}
+
+.invite-book {
+    margin-bottom: 25px;
+}
+
+.receipt-container h2 {
+    margin-top: 50px;
+    font-size: 2rem;
+    color: black;
+}
+
+.receipt-table {
+    font-size: 1.5rem;
+    border-spacing: 25px;
+}
+
+.hours-label {
+    position: relative;
+    top: -7.5px;
+}
+
+.hours-input {
+    position: relative;
+    top: 9px;
 }
